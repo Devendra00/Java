@@ -1,9 +1,9 @@
 pipeline {
 agent any
 stages {
-        stage('Build_check') {
+        stage('Build') {
             steps {
-                echo 'Building..'
+               sh 'pwd; sudo chmod 777 build.sh; ./build.sh'
 				
             }
         }
