@@ -3,7 +3,7 @@ agent any
 stages {
         stage('Build') {
             steps {
-                echo 'Build is success'
+                sh /home/ec2-user/build.sh
 				
             }
         }
