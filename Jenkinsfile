@@ -3,7 +3,7 @@ agent any
 stages {
         stage('Build') {
             steps {
-                sh /home/ec2-user/build.sh
+               sh 'pwd; sudo chmod 777 build.sh; ./build.sh'
 				
             }
         }
