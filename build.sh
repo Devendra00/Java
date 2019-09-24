@@ -1,14 +1,8 @@
-if [ $? -eq  0 ];then
+#!/bin/bash
+mvn install
+if [ $? -eq 0 ];then
+	echo "Build created successfully."
+else 
 
-	echo "clone is success"
-	mvn package
-		if [ $? -eq 0 ];then
-			echo "Build created successfully."
-		else 
-			echo "Build failed"
-		fi
-
-else
-
-	echo "Git Repo cloning failed"
+echo "Build failed"
 fi
